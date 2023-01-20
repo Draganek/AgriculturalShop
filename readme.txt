@@ -1,1 +1,2 @@
 Bla bla
+ważny przekaz
