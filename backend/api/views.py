@@ -1,5 +1,14 @@
+import json
 from django.http import JsonResponse
 
+from products.models import Product
 
 def api_home(request, *args, **kwargs):
-    return JsonResponse({"message": "Siemanko to jest testowa odpowiedź serwera"})
+    model_data = Product.objects.all().order_by("?").first()
+    data = {}
+    if model_data:
+        data["title"] = model_data.title
+        data["content"] = model_data.content
+        data["price"] = model_data.price
+        data['id'] = model_data.id
+    return JsonResponse(data)
