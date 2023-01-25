@@ -24,5 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     re_path(r'', include(users_router.urls)),
-    path('users/login/', UserLogin.as_view({"post": "create"}))
+    path('users/login/', UserLogin.as_view({"post": "create"})),
+    path('api/products/', include('products.urls'))
 ]
