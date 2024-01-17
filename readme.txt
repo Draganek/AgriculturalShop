@@ -4,7 +4,7 @@ Umożliwia on zakładanie kont klienta / sprzedawcy / admina
 gdzie:
 - klient - może zamawiać produkty
 - sprzedawca - dodawać / usuwać produkty, dodawania klientów
-- admin - GodMode
+- admin - GodMode 
 
 
 ~~ © @Draganek, @grbwsky, @bartke117
